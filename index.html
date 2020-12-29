@@ -5,25 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>National Park Search</title>
+    <link href="app.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-    <div class="container">
-        <h1>Search For National Parks</h1>
-        <form class="parkSearchForm">
-            <label for="states">Enter the State(s):</label>
-            <input type="text" name="states" required>
-            <label for="numberResults">Maximum Number of Results:</label>
-            <input type="number" name="numberResults">
-            <button type="submit" id="parkSubmit">submit</button>
-        </form>
+    <h1>Search For National Parks</h1>
+    <form class="parkSearchForm">
+        <label for="states">Enter the State(s):</label>
+        <input type="text" name="states" id="states" required>
+        <label for="numberResults">Maximum Number of Results:</label>
+        <input type="number" name="numberResults" id="numberResults">
+        <button type="submit" id="parkSubmit">submit</button>
+    </form>
 
-        <section class="results hidden">
-            <ul class="js-results-list">
+    <section class="results hidden">
+        <ul id="js-results-list">
 
-            </ul>
-        </section>
-    </div>
+        </ul>
+    </section>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.js" crossorigin="anonymous"></script>
     <script src="app.js"></script>
 </body>

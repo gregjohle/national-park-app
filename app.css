@@ -3,22 +3,26 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.container {
+body {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
 }
 
 form {
-    display: block;
+    display: border-box;
+    flex: 1;
 }
 
 .hidden {
     display: none;
 }
 
-ul {
-    list-style-type: none;
+ul,
+li {
+    display: block;
+    text-align: left;
+    max-width: 700px;
+    margin: 0 auto;
 }
